@@ -38,6 +38,11 @@ h6,
     font-weight: 500 !important;
 }
 
+.title-spacing {
+    margin-bottom: 80px; /* Ajuste este valor conforme necessário */
+}
+
+
 
 /*** Spinner ***/
 #spinner {
