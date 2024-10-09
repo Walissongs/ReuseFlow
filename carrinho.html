@@ -109,93 +109,88 @@
     <section class="container my-5">
         <div class="row">
             <div class="col-md-8">
-                <!-- Cart Items List -->
-                <div class="cart-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="img/aluminio-1.jpg" class="img-fluid" alt="Product">
-                        </div>
-                        <div class="col-md-5">
-                            <h4>Alumínio</h4>
-                            <p>$45.00</p>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control" value="1">
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger">Remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more cart items here -->
-                <div class="cart-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="img/vidro-1.jpg" class="img-fluid" alt="Product">
-                        </div>
-                        <div class="col-md-5">
-                            <h4>Vidro</h4>
-                            <p>$0.15</p>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control" value="1">
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger">Remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more cart items here -->
-                <div class="cart-item">
+                <div class="cart-item" data-price="2.50">
                     <div class="row">
                         <div class="col-md-3">
                             <img src="img/papelao-1.png" class="img-fluid" alt="Product">
                         </div>
-                        <div class="col-md-5">
-                            <h4>Papel e Papelão</h4>
-                            <p>$2.50</p>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control" value="1">
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger">Remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more cart items here -->
-                <div class="cart-item">
-                    <div class="row">
                         <div class="col-md-3">
-                            <img src="img/cobre-1.jpg" class="img-fluid" alt="Product">
+                            <h4>Papel e Papelão</h4>
+                            <p class="item-price">$2.50</p>
                         </div>
-                        <div class="col-md-5">
-                            <h4>Cobre</h4>
-                            <p>$2.50</p>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
                         </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control" value="1">
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger">Remover</button>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
                         </div>
                     </div>
                 </div>
-                <!-- Add more cart items here -->
-                <div class="cart-item">
+                <div class="cart-item" data-price="1.20">
                     <div class="row">
                         <div class="col-md-3">
                             <img src="img/plastico-1.jpg" class="img-fluid" alt="Product">
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-3">
                             <h4>Plástico</h4>
-                            <p>$1.20</p>
+                            <p class="item-price">$1.20</p>
                         </div>
-                        <div class="col-md-2">
-                            <input type="number" class="form-control" value="1">
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
                         </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger">Remover</button>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="2.50">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/cobre-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Cobre</h4>
+                            <p class="item-price">$2.50</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="0.15">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/vidro-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Vidro</h4>
+                            <p class="item-price">$0.15</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="45.00">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/aluminio-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Alumínio</h4>
+                            <p class="item-price">$45.00</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
                         </div>
                     </div>
                 </div>
@@ -208,15 +203,15 @@
                         <hr>
                         <div class="d-flex justify-content-between">
                             <span>Subtotal:</span>
-                            <span>$51.20</span>
+                            <span id="subtotal">$51.20</span>
                         </div>
                         <div class="d-flex justify-content-between">
                             <span>Desconto:</span>
-                            <span>$0.00</span>
+                            <span id="discount">$0.00</span>
                         </div>
                         <div class="d-flex justify-content-between">
                             <span>Total:</span>
-                            <span>$51.20</span>
+                            <span id="total">$51.20</span>
                         </div>
                         <hr>
                         <button class="btn btn-primary btn-block">Finalizar Pedido</button>
@@ -225,6 +220,32 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function updateCart() {
+            let subtotal = 0;
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const price = parseFloat(item.getAttribute('data-price'));
+                const quantity = parseInt(item.querySelector('.item-quantity').value);
+                subtotal += price * quantity;
+            });
+            document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
+            document.getElementById('total').innerText = `$${subtotal.toFixed(2)}`;
+        }
+
+        document.querySelectorAll('.item-quantity').forEach(input => {
+            input.addEventListener('change', updateCart);
+        });
+
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', function() {
+                this.closest('.cart-item').remove();
+                updateCart();
+            });
+        });
+
+        updateCart();
+    </script>
 
     <!-- Footer Start -->
     <div id="footer" class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">

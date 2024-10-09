@@ -77,3 +77,26 @@
     
 })(jQuery);
 
+    function updateCart() {
+        let subtotal = 0;
+        document.querySelectorAll('.cart-item').forEach(item => {
+            const price = parseFloat(item.getAttribute('data-price'));
+            const quantity = parseInt(item.querySelector('.item-quantity').value);
+            subtotal += price * quantity;
+        });
+        document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
+        document.getElementById('total').innerText = `$${subtotal.toFixed(2)}`;
+    }
+
+    document.querySelectorAll('.item-quantity').forEach(input => {
+        input.addEventListener('change', updateCart);
+    });
+
+    document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', function() {
+            this.closest('.cart-item').remove();
+            updateCart();
+        });
+    });
+
+    updateCart();
