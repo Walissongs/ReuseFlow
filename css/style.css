@@ -572,3 +572,83 @@ h6,
         min-height: 300px; /* Adjust banner image for smaller devices */
     }
 }
+
+
+
+
+/* ----------------- Caixinha -------------- */
+
+.secao-faq {
+    padding: 16px;
+    
+}
+
+.conteudo-centralizado {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.item-faq {
+    margin-bottom: 16px;
+}
+
+.caixa-faq {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.cabecalho-faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.titulo-faq {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.data-faq {
+    color: #888;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.icone-faq {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+}
+
+.conteudo-faq {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 16px;
+    padding: 0 16px;
+    border-top: 1px solid #ddd;
+}
+
+.descricao-faq {
+    color: #333;
+    padding: 16px 0;
+}
+
+.link-faq {
+    margin-top: 16px;
+}
+
+.botao-faq {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+/* --------------- Caixinha FIM ----------------- */
