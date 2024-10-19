@@ -101,7 +101,6 @@
 
     updateCart();
 
-
     function toggleFaq(element) {
         const content = element.nextElementSibling;
         const icon = element.querySelector("img");

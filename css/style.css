@@ -584,7 +584,7 @@ h6,
 }
 
 .conteudo-centralizado {
-    max-width: 800px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -644,7 +644,7 @@ h6,
 .botao-faq {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #007bff;
+    background-color: var(--primary);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -652,3 +652,45 @@ h6,
 
 
 /* --------------- Caixinha FIM ----------------- */
+
+/* ----------------- Bandeira -------------------------- */
+
+.estados-brasileiros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+
+}
+
+.estado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.bandeira {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.nome-estado {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nome-estado:hover {
+    text-decoration: underline;
+}
+
+/* ----------------- Bandeira -------------------------- */
