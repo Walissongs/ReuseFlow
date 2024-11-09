@@ -87,7 +87,6 @@
             <a href="about.html" class="nav-item nav-link">Sobre</a>
             <a href="legislacao.html" class="nav-item nav-link">Legislação</a>
             <a href="produtos.html" class="nav-item nav-link">Produtos</a>
-            <a href="carrinho.html" class="nav-item nav-link">Carrinho</a>
             <button class="btn rounded-start text-success" type="button" style="margin-bottom: 5px; margin-right: 8px;" onclick="location.href='login.html'">Login</button>
             <button class="btn rounded-end text-success" type="button" style="margin-bottom: 5px; margin-right: 8px;" onclick="location.href='register.html'">Criar conta</button>
         </div>
@@ -134,8 +133,6 @@
                 </div>
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
                         <img class="card-img-top" src="./img/vidro-1.jpg" alt="..." />
                         <!-- Product details-->
@@ -164,8 +161,6 @@
                 </div>
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
                         <img class="card-img-top" src="/img/cobre-1.jpg" alt="..." />
                         <!-- Product details-->
@@ -213,8 +208,6 @@
                 </div>
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
                         <img class="card-img-top" src="/img/plastico-2.jpg" alt="..." />
                         <!-- Product details-->
@@ -256,8 +249,160 @@
         </div>
     </section>
 
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder text-white">Carrinho</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Itens Selecionados</p>
+            </div>
+        </div>
+    </header>
+    <!-- Header-->
 
- 
+    <!-- Cart Start -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cart-item" data-price="2.50">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/papelao-1.png" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Papel e Papelão</h4>
+                            <p class="item-price">$2.50</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="1.20">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/plastico-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Plástico</h4>
+                            <p class="item-price">$1.20</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="2.50">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/cobre-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Cobre</h4>
+                            <p class="item-price">$2.50</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="0.15">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/vidro-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Vidro</h4>
+                            <p class="item-price">$0.15</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item" data-price="45.00">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/aluminio-1.jpg" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Alumínio</h4>
+                            <p class="item-price">$45.00</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" class="form-control item-quantity" value="1" min="1">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger remove-item">Remover</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Order Summary -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Resumo do Pedido</h4>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$51.20</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Desconto:</span>
+                            <span id="discount">$0.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Total:</span>
+                            <span id="total">$51.20</span>
+                        </div>
+                        <hr>
+                        <button class="btn btn-primary btn-block">Finalizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart End -->
+
+    <script>
+        function updateCart() {
+            let subtotal = 0;
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const price = parseFloat(item.getAttribute('data-price'));
+                const quantity = parseInt(item.querySelector('.item-quantity').value);
+                subtotal += price * quantity;
+            });
+            document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
+            document.getElementById('total').innerText = `$${subtotal.toFixed(2)}`;
+        }
+
+        document.querySelectorAll('.item-quantity').forEach(input => {
+            input.addEventListener('change', updateCart);
+        });
+
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', function() {
+                this.closest('.cart-item').remove();
+                updateCart();
+            });
+        });
+
+        updateCart();
+    </script>
 
 
     <!-- Footer Start -->
@@ -270,21 +415,22 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+055 3636-9999</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>reuseflow@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+
+                <!--
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Serviços</h4>
                     <a class="btn btn-link" href="">Serviço 1</a>
                     <a class="btn btn-link" href="">Serviço 2</a>
                 </div>
+                -->
+
+                <!--
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Links</h4>
                     <a class="btn btn-link" href="">Sobre nós</a>
@@ -293,14 +439,14 @@
                     <a class="btn btn-link" href="">Termos e Condições</a>
                     <a class="btn btn-link" href="">Suporte</a>
                 </div>
+                -->
+
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Boletim Informativo</h4>
                     <p>Receba noticias atualizadas sobre sustentabilidade</p>
                     <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Seu e-mail">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Assine</button>
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Seu e-mail">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Assine</button>
                     </div>
                 </div>
             </div>
